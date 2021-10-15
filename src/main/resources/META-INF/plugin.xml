@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.daisuzz.sample-intellij-plugin</id>
+    <name>sample-intellij-plugin</name>
+    <vendor email="" url="">daisuzz</vendor>
+
+    <description>This is sample plugin</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="com.daisuzz.sampleintelljplugin.action.SampleAction"
+                class="com.daisuzz.sampleintelljplugin.action.SampleAction"
+                text="Sample IntelliJ Plugin"
+                description="Sample intellij plugin">
+            <keyboard-shortcut first-keystroke="alt SEMICOLON" keymap="$default"/>
+        </action>
+    </actions>
+</idea-plugin>
